@@ -22,11 +22,6 @@ public class ReturnTransaction implements Transaction{
     Enumeration<ReturnType> reasonForReturn;
 
     @Override
-    public String createTransactionId() {
-        return "";
-    }
-
-    @Override
     public Double calculateTotal() {
         return 0.0;
     }

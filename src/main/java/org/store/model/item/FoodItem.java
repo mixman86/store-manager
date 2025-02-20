@@ -7,11 +7,7 @@ import java.util.Date;
 
 @Getter
 @Setter
-public class FoodItem implements Item{
-
-    String itemId;
-
-    String itemName;
+public class FoodItem extends Item{
 
     String itemBrand;
 
@@ -21,13 +17,4 @@ public class FoodItem implements Item{
 
     Date dateOfExpiration;
 
-    @Override
-    public String generateItemId() {
-        return "";
-    }
-
-    @Override
-    public Double calculateItemPurchasePrice() {
-        return 0.0;
-    }
 }

@@ -1,9 +1,11 @@
 package org.store.model.item;
 
-public interface Item {
+public abstract class Item {
 
-    public String generateItemId();
+    String itemId;
 
-    public Double calculateItemPurchasePrice();
+    String itemName;
+
+    String itemManufacturer;
 
 }

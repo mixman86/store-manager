@@ -5,13 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ElectronicsItem implements Item{
-
-    String itemId;
-
-    String itemName;
-
-    String itemManufacturer;
+public class ElectronicsItem extends Item {
 
     Double itemPrice;
 
@@ -20,14 +14,4 @@ public class ElectronicsItem implements Item{
     Boolean hasAgeRestriction;
 
     Boolean hasSecurityRestriction;
-
-    @Override
-    public String generateItemId() {
-        return "";
-    }
-
-    @Override
-    public Double calculateItemPurchasePrice() {
-        return 0.0;
-    }
 }

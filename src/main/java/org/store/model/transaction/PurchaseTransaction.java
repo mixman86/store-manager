@@ -20,11 +20,6 @@ public class PurchaseTransaction implements Transaction{
     public Boolean customerRewardsUsed;
 
     @Override
-    public String createTransactionId() {
-        return "";
-    }
-
-    @Override
     public Double calculateTotal() {
         return 0.0;
     }
